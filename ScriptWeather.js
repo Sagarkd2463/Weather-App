@@ -11,7 +11,7 @@ const weather_body = document.querySelector('.weather-body');
 
 //sending api request to fetch data base on city with related details
 async function checkWeather(city) {
-    const api_key = "07e100dec47a762ac87e07a360436d09";
+    const api_key = "";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
 
     const weather_data = await fetch(`${url}`).then((response) => response.json());
